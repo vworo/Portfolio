@@ -4,11 +4,26 @@
 
 <template>
     <ul>
-        <li><RouterLink to="/">Home</RouterLink></li>
-        <li><RouterLink to="/about">About</RouterLink></li>
-        <li><RouterLink to="/projects">Projects</RouterLink></li>
-        <li><RouterLink to="/resume">Resume</RouterLink></li>
-        <li><RouterLink to="/contact">Contact</RouterLink></li>
+        <li>
+            <v-icon name="la-home-solid" />
+            <RouterLink to="/">Home</RouterLink>
+        </li>
+        <li>
+            <v-icon name="bi-person" />
+            <RouterLink to="/about">About</RouterLink>
+        </li>
+        <li>
+            <v-icon name="md-librarybooks-outlined" />
+            <RouterLink to="/projects">Projects</RouterLink>
+        </li>
+        <li>
+            <v-icon name="hi-document-text" />
+            <RouterLink to="/resume">Resume</RouterLink>
+        </li>
+        <li>
+            <v-icon name="hi-mail" />
+            <RouterLink to="/contact">Contact</RouterLink>
+        </li>
     </ul>
 </template>
 
