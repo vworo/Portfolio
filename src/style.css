@@ -16,16 +16,18 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: darkorange;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: rgb(167, 92, 0);
+  transition: 0.5s;
 }
 
 body {
   margin: 0;
+  margin-top: 5em;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -69,6 +71,7 @@ button:focus-visible {
   text-align: center;
 }
 
+/* DEVNOTE: Test light setting on PC */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -80,4 +83,16 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: rgb(85, 47, 0);
+}
+ 
+::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: darkorange;
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }

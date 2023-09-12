@@ -31,11 +31,18 @@
     ul {
         list-style: none;
         padding: 0;
+        margin: 0;
         display: flex;
         justify-content: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(36, 36, 36, 0.3);
+        backdrop-filter: blur(6px);
     }
 
     li {
-        margin: 2em;        
+        margin: 1em 2em;        
     }
 </style>
