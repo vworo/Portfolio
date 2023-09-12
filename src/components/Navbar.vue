@@ -5,23 +5,23 @@
 <template>
     <ul>
         <li>
-            <v-icon name="la-home-solid" />
+            <v-icon name="la-home-solid" color="darkorange" />
             <RouterLink to="/">Home</RouterLink>
         </li>
         <li>
-            <v-icon name="bi-person" />
+            <v-icon name="bi-person" color="darkorange" scale="1.25"/>
             <RouterLink to="/about">About</RouterLink>
         </li>
         <li>
-            <v-icon name="md-librarybooks-outlined" />
+            <v-icon name="md-librarybooks-outlined" color="darkorange" />
             <RouterLink to="/projects">Projects</RouterLink>
         </li>
         <li>
-            <v-icon name="hi-document-text" />
+            <v-icon name="hi-document-text" color="darkorange" />
             <RouterLink to="/resume">Resume</RouterLink>
         </li>
         <li>
-            <v-icon name="hi-mail" />
+            <v-icon name="hi-mail" color="darkorange" />
             <RouterLink to="/contact">Contact</RouterLink>
         </li>
     </ul>

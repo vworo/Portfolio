@@ -16,12 +16,12 @@
 
 a {
   font-weight: 500;
-  color: darkorange;
+  color: white;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: rgb(167, 92, 0);
+  color: rgb(255, 181, 91);
   transition: 0.5s;
 }
 
