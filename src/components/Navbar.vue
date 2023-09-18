@@ -5,24 +5,34 @@
 <template>
     <ul>
         <li>
-            <v-icon name="la-home-solid" color="darkorange" />
-            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/">
+                <v-icon name="la-home-solid" color="darkorange" />
+                Home
+            </RouterLink>
         </li>
         <li>
-            <v-icon name="bi-person" color="darkorange" scale="1.25"/>
-            <RouterLink to="/about">About</RouterLink>
+            <RouterLink to="/about">
+                <v-icon name="bi-person" color="darkorange" scale="1.25"/>
+                About
+            </RouterLink>
         </li>
         <li>
-            <v-icon name="md-librarybooks-outlined" color="darkorange" />
-            <RouterLink to="/projects">Projects</RouterLink>
+            <RouterLink to="/projects">
+                <v-icon name="md-librarybooks-outlined" color="darkorange" />
+                Projects
+            </RouterLink>
         </li>
         <li>
-            <v-icon name="hi-document-text" color="darkorange" />
-            <RouterLink to="/resume">Resume</RouterLink>
+            <RouterLink to="/resume">
+                <v-icon name="hi-document-text" color="darkorange" />
+                Resume
+            </RouterLink>
         </li>
         <li>
-            <v-icon name="hi-mail" color="darkorange" />
-            <RouterLink to="/contact">Contact</RouterLink>
+            <RouterLink to="/contact">
+                <v-icon name="hi-mail" color="darkorange" />
+                Contact
+            </RouterLink>
         </li>
     </ul>
 </template>
@@ -46,7 +56,7 @@
         margin: 1em 2em;
     }
 
-    a {
-        margin: 0 0.5em;
+    svg {
+        margin: 0em 0.5em;
     }
 </style>

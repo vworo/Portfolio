@@ -32,9 +32,10 @@
         <label>Message</label>
         <textarea name="message"></textarea>
 
-        <button type="submit" value="Send">Submit</button>
-        <button type="button" @click="clearForm">Clear</button>
-
+        <div class="controls">
+            <button type="button" @click="clearForm">Clear</button>
+            <button type="submit" value="Send">Submit</button>
+        </div>
     </form>
 </template>
 
@@ -42,10 +43,12 @@
     form {
         background-color: rgba(255, 255, 255, 0.1);
         padding: 1em;
+        border-radius: 3em;
     }
 
     label {
         margin: 1em;
+        display: block;
     }
 
     input, textarea {
