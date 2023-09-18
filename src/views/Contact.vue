@@ -44,6 +44,7 @@
         background-color: rgba(255, 255, 255, 0.1);
         padding: 1em;
         border-radius: 3em;
+        width: 50vw;
     }
 
     label {
@@ -53,6 +54,7 @@
 
     input, textarea {
         margin: 1em;
+        width: 90%;
     }
 
     button {
