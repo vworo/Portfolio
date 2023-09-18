@@ -43,6 +43,10 @@
     }
 
     li {
-        margin: 1em 2em;        
+        margin: 1em 2em;
+    }
+
+    a {
+        margin: 0 0.5em;
     }
 </style>

@@ -14,5 +14,7 @@
 </template>
 
 <style scoped>
-
+  .bg-animation {
+    z-index: -1;
+  }
 </style>
