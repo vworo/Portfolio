@@ -6,6 +6,6 @@
     <h2>Projects Page coming soon.</h2>
 </template>
 
-<style scope>
+<style scoped>
 
 </style>

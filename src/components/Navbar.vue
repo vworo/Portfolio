@@ -37,7 +37,7 @@
     </ul>
 </template>
 
-<style scope>
+<style scoped>
     ul {
         list-style: none;
         padding: 0;

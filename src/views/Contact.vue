@@ -36,20 +36,22 @@
             <button type="button" @click="clearForm">Clear</button>
             <button type="submit" value="Send">Submit</button>
         </div>
+
     </form>
 </template>
 
-<style scope>
+<style scoped>
     form {
         background-color: rgba(255, 255, 255, 0.1);
         padding: 1em;
+        border: solid 1px;
         border-radius: 3em;
+        border-color: darkorange;
         width: 50vw;
     }
 
     label {
         margin: 1em;
-        display: block;
     }
 
     input, textarea {
