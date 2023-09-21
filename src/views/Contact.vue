@@ -24,13 +24,13 @@
     <form @submit.prevent="sendEmail" ref="contactForm">
 
         <label>Name</label>
-        <input type="text" name="user_name">
+        <input type="text" name="user_name" placeholder="John Smith" required>
 
         <label>Email</label>
-        <input type="email" name="user_email">
+        <input type="email" name="user_email" placeholder="johnsmith@gmail.com" required>
 
         <label>Message</label>
-        <textarea name="message"></textarea>
+        <textarea name="message" placeholder="Your really cool message goes here." required></textarea>
 
         <div class="controls">
             <button type="button" @click="clearForm">Clear</button>
@@ -56,9 +56,16 @@
 
     input, textarea {
         margin: 1em;
+        padding: 0.25em;
         width: 90%;
+        font-family: inherit;
+        font-size: inherit;
     }
 
+    textarea {
+        height: 100px;
+    }
+    
     button {
         margin: 1em;
     }
