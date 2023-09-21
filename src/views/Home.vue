@@ -12,7 +12,7 @@
 
 <style scoped>
     img {
-        width: 75%;
+        width: 40%;
     }
 
     h2 {

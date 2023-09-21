@@ -44,10 +44,11 @@
     form {
         background-color: rgba(255, 255, 255, 0.1);
         padding: 1em;
-        border: solid 1px;
+        border: solid 1px darkorange;
         border-radius: 3em;
-        border-color: darkorange;
-        width: 50vw;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0.5em;
     }
 
     label {
