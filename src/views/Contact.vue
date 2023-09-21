@@ -48,7 +48,6 @@
         border-radius: 3em;
         width: 50%;
         margin: 0 auto;
-        padding: 0.5em;
     }
 
     label {
