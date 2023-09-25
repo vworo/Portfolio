@@ -46,7 +46,7 @@
         padding: 1em;
         border: solid 1px darkorange;
         border-radius: 3em;
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
     }
 
@@ -57,7 +57,7 @@
     input, textarea {
         margin: 1em;
         padding: 0.25em;
-        width: 90%;
+        width: 80%;
         font-family: inherit;
         font-size: inherit;
     }
@@ -67,6 +67,6 @@
     }
     
     button {
-        margin: 1em;
+        margin: 0.5em;
     }
 </style>
