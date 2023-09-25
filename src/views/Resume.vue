@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <embed src="../src/assets/Resume - LinkedIn.pdf" type="application/pdf" width="100%" height="760px">
+    <embed src="../src/assets/Resume - LinkedIn.pdf" type="pdf" width="100%" height="760px">
 </template>
 
 <style scoped>
