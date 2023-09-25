@@ -1,5 +1,13 @@
 <script setup>
+    import { ref } from 'vue';
     import emailjs from '@emailjs/browser';
+
+    const contactForm = ref(null);
+
+    const clearForm = () => {
+        console.log('Form cleared.');
+        contactForm.value.reset();
+    };
 
     const sendEmail =() => {
         emailjs.sendForm('contact_service', 'contact_form', 'form', import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY)
