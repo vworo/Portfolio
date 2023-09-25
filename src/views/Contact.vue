@@ -43,7 +43,7 @@
 <style scoped>
     form {
         background-color: rgba(255, 255, 255, 0.1);
-        padding: 1em;
+        padding: 2em;
         border: solid 1px darkorange;
         border-radius: 3em;
         width: 75%;
@@ -51,7 +51,7 @@
     }
 
     label {
-        margin: 1em;
+        display: block;
     }
 
     input, textarea {
