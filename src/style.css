@@ -101,6 +101,7 @@ button:focus-visible {
 }
 
 #stars {
+  margin-left: 40em;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -112,6 +113,7 @@ button:focus-visible {
 }
 
 #stars:after {
+  margin-left: 40em;
   content: " ";
   position: absolute;
   top: 2000px;
@@ -122,6 +124,7 @@ button:focus-visible {
 }
 
 #stars2 {
+  margin-left: 40em;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -133,6 +136,7 @@ button:focus-visible {
 }
 
 #stars2:after {
+  margin-left: 40em;
   content: " ";
   position: absolute;
   top: 2000px;
