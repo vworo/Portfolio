@@ -1,13 +1,13 @@
 import { createApp } from 'vue'
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { LaHomeSolid, BiPerson, MdLibrarybooksOutlined, HiDocumentText, HiMail } from "oh-vue-icons/icons";
+import { LaHomeSolid, MdPersonoutline, MdLibrarybooksOutlined, HiDocumentText, HiMail } from "oh-vue-icons/icons";
 
 import App from './App.vue'
 import router from './router'
 import './style.css'
 
 // Icons documentation - https://oh-vue-icons.js.org/docs
-addIcons(LaHomeSolid, BiPerson, MdLibrarybooksOutlined, HiDocumentText, HiMail);
+addIcons(LaHomeSolid, MdPersonoutline, MdLibrarybooksOutlined, HiDocumentText, HiMail);
 
 // Create and mount the root instance.
 const app = createApp(App)

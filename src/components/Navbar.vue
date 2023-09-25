@@ -12,7 +12,7 @@
         </li>
         <li>
             <RouterLink to="/about">
-                <v-icon name="bi-person" color="darkorange" scale="1.25"/>
+                <v-icon name="md-personoutline" color="darkorange"/>
                 About
             </RouterLink>
         </li>
@@ -43,13 +43,16 @@
         padding: 0;
         margin: 0;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         background-color: rgba(36, 36, 36, 0.3);
         backdrop-filter: blur(6px);
+        border-bottom: 1px solid #E2E8F0;
     }
 
     li {
