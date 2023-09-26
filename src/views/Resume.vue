@@ -4,7 +4,7 @@
 
 <template>
     <object data="/Resume - LinkedIn.pdf" type="application/pdf">
-        <p>Your browser does not support PDFs.</p>
+        <img src="/Resume - LinkedIn.pdf" alt="Resume in pdf format">
     </object>
 </template>
 
