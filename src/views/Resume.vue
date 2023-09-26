@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <object data="https://drive.google.com/file/d/1d-00lsJvmWJKiq8GncXQTAODXp9Pve8S/view" type="application/pdf">
+    <object data="Resume - LinkedIn.pdf" type="application/pdf">
         <p>Your browser does not support PDFs.</p>
         <p>Instead you can <a href="Resume - LinkedIn.pdf" target="_blank" rel="noopener">click here to download the PDF file.</a></p>
     </object>
