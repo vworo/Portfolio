@@ -77,7 +77,7 @@
     }
 
     .text-content { 
-        text-align: left;
+        text-align: center;
         width: 50%;
         padding: 2em;
     }
@@ -89,10 +89,18 @@
         margin: 0 auto;
     }
 
+    h3, p {
+        text-align: left;
+    }
+
     img {
         max-width: 100%;
         height: auto;
         border: solid 1px darkorange;
+    }
+
+    button {
+        margin: 0.5em 1em;
     }
 
     @media screen and (max-width: 600px) {
