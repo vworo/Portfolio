@@ -3,18 +3,23 @@
     import emailjs from '@emailjs/browser';
 
     const contactForm = ref(null);
+    let submitMessage = ref(null);
 
-    const clearForm = () => {
-        console.log('Form cleared.');
+    const clearFormAndMessage = () => {
+        console.log('Form and message cleared.');
         contactForm.value.reset();
+        submitMessage.value = null;
     };
 
     const sendEmail =() => {
         emailjs.sendForm('contact_service', 'contact_form', 'form', import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY)
             .then((result) => {
+                clearFormAndMessage();
+                submitMessage.value = "Message sent successfully!";
                 console.log('SUCCESS!', result.text);
-                clearForm();
             }, (error) => {
+                clearFormAndMessage();
+                submitMessage.value = "Something went wrong.";
                 console.log('FAILED...', error.text);
             });
     };
@@ -38,6 +43,7 @@
         </div>
 
     </form>
+    <p id="emailjs-submit-message">{{ submitMessage }}</p>
 </template>
 
 <style scoped>
