@@ -5,20 +5,23 @@
     const contactForm = ref(null);
     let submitMessage = ref(null);
 
-    const clearFormAndMessage = () => {
-        console.log('Form and message cleared.');
+    const clearForm = () => {
+        console.log('Form cleared.');
         contactForm.value.reset();
+    };
+
+    const clearMessage = () => {
         submitMessage.value = null;
     };
 
     const sendEmail =() => {
-        emailjs.sendForm('contact_service', 'contact_form', 'form', import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY)
+        emailjs.sendForm('contact_service', 'contact_form', 'form', "import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY")
             .then((result) => {
-                clearFormAndMessage();
+                clearForm();
                 submitMessage.value = "Message sent successfully!";
                 console.log('SUCCESS!', result.text);
             }, (error) => {
-                clearFormAndMessage();
+                clearForm();
                 submitMessage.value = "Something went wrong.";
                 console.log('FAILED...', error.text);
             });
@@ -29,13 +32,13 @@
     <form @submit.prevent="sendEmail" ref="contactForm">
 
         <label>Name</label>
-        <input type="text" name="user_name" placeholder="John Smith" required>
+        <input type="text" name="user_name" placeholder="John Smith" @input="clearMessage" required>
 
         <label>Email</label>
-        <input type="email" name="user_email" placeholder="johnsmith@gmail.com" required>
+        <input type="email" name="user_email" placeholder="johnsmith@gmail.com" @input="clearMessage" required>
 
         <label>Message</label>
-        <textarea name="message" placeholder="Your really cool message goes here." required></textarea>
+        <textarea name="message" placeholder="Your really cool message goes here." @input="clearMessage" required></textarea>
 
         <div class="controls">
             <button type="reset">Clear</button>
