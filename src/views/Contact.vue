@@ -15,7 +15,7 @@
     };
 
     const sendEmail =() => {
-        emailjs.sendForm('contact_service', 'contact_form', 'form', "import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY")
+        emailjs.sendForm('contact_service', 'contact_form', 'form', import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY)
             .then((result) => {
                 clearForm();
                 submitMessage.value = "Message sent successfully!";
