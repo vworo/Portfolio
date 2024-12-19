@@ -5,20 +5,19 @@
     const contactForm = ref(null);
     let submitMessage = ref(null);
 
-    const clearFormAndMessage = () => {
-        console.log('Form and message cleared.');
+    const clearForm = () => {
+        console.log('Form cleared.');
         contactForm.value.reset();
-        submitMessage.value = null;
     };
 
     const sendEmail =() => {
-        emailjs.sendForm('contact_service', 'contact_form', 'form', import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY)
+        emailjs.sendForm('contact_service', 'contact_form', 'form', "import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY")
             .then((result) => {
-                clearFormAndMessage();
+                clearForm();
                 submitMessage.value = "Message sent successfully!";
                 console.log('SUCCESS!', result.text);
             }, (error) => {
-                clearFormAndMessage();
+                clearForm();
                 submitMessage.value = "Something went wrong.";
                 console.log('FAILED...', error.text);
             });
