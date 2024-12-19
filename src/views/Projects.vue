@@ -5,6 +5,8 @@
 <template>
     <h2>Projects</h2>
 
+    <span>*Currently under reconstruction*</span>
+
     <div class="listing">
         <div class="text-content">
             <h3>GameCade</h3>
